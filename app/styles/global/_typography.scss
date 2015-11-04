@@ -4,12 +4,12 @@
 // Variables
 $josefin-sans: 'Josefin Sans', sans-serif;
 
-$prox-bold-it: 'Proxima Nova Bold', sans-serif;
-$prox-bold: 'Proxima Nova Bold It', sans-serif;
+$prox-bold: 'Proxima Nova Bold', sans-serif;
+$prox-bold-it: 'Proxima Nova Bold It', sans-serif;
 $prox-light: 'Proxima Nova Bold Light', sans-serif;
 $prox-light-it: 'Proxima Nova Bold Light It', sans-serif;
-$prox-bold-it: 'Proxima Nova Bold Reg', sans-serif;
-$prox-bold-it: 'Proxima Nova Bold Reg It', sans-serif;
+$prox-reg: 'Proxima Nova Reg', sans-serif;
+$prox-reg-it: 'Proxima Nova Reg It', sans-serif;
 
 @font-face {
 	font-family: 'Proxima Nova Bold';
@@ -32,12 +32,12 @@ $prox-bold-it: 'Proxima Nova Bold Reg It', sans-serif;
 }
 
 @font-face {
-	font-family: 'Proxima Nova Bold It';
+	font-family: 'Proxima Nova Reg';
 	src: url('../fonts/ProximaNovaReg.otf');
 }
 
 @font-face {
-	font-family: 'Proxima Nova Bold It';
+	font-family: 'Proxima Nova Reg It';
 	src: url('../fonts/ProximaNovaRegIt.otf');
 }
 

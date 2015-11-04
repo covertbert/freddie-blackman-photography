@@ -1,14 +1,29 @@
 // bower:scss
 // endbower
 
+//Vendor
+@import 'vendor/normalize';
+
 //Global
 @import 'global/colors';
 @import 'global/typography';
+@import 'global/animations';
+//Partials
+@import 'partials/header';
 
 body {
-	font-family: $prox-bold;
+	font-family: $prox-reg;
 	color: $type-black;
 	background: $background-grey;
+}
+
+a {
+	color: $type-black;
+	transition: $standard-linear;
+
+	&:hover {
+		color: $type-grey;
+	}
 }
 
 h1,
@@ -20,10 +35,41 @@ h6 {
 	font-family: $josefin-sans;
 }
 
+strong {
+	font-family: $prox-bold;
+}
+
+i {
+	font-family: $prox-reg-it;
+}
+
+.bold-italic {
+	font-family: $prox-bold-it;
+}
+
+.navigation {
+	font-family: $josefin-sans;
+	text-transform: uppercase;
+
+	&__menu {
+		list-style: none;
+	}
+
+	&__menu-item a {
+		color: $type-grey;
+		text-decoration: none;
+
+		&:hover {
+			color: $type-black;
+		}
+	}
+
+	&__menu-item--current a {
+		color: $type-black;
+	}
+}
 
 .browserupgrade {
-	margin: 0.2em 0;
-	background: #ccc;
-	color: #000;
-	padding: 0.2em 0;
+	position: fixed;
+	margin: 0;
 }
