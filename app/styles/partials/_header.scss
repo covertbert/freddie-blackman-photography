@@ -7,8 +7,8 @@
 }
 
 .logo {
-	margin-top: 20px;
-	margin-left: 20px;
+	width: 260px;
+	margin: 0 auto;
 
 	&__image {
 		width: 250px;
@@ -21,6 +21,7 @@
 		position: absolute;
 		top: 25px;
 		right: 40px;
+		display: none;
 
 		&__menu-item {
 			display: inline-block;
@@ -28,8 +29,21 @@
 		}
 
 	}
+
+	&--mobile {
+		&__open-button {
+
+		}
+	}
 }
 
-@media screen {
+@media (min-width: 768px) {
+	.navigation--top {
+		display: block;
+	}
 
+	.logo {
+		margin-top: 20px;
+		margin-left: 20px;
+	}
 }
