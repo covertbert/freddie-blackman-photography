@@ -21,7 +21,7 @@
 
 		&__menu {
 			float: right;
-			margin-top: 45px;
+			margin-top: calc((120px/2) - 16px/2);
 			margin-right: 20px;
 		}
 
@@ -129,7 +129,7 @@
 	}
 
 	.logo {
-		margin-top: 30px;
+		margin-top: calc((120px/2) - 65px/2);
 		margin-left: 20px;
 	}
 
