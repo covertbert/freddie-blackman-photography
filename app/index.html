@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="mobile-web-app-capable" content="yes"/>
+	<meta name="theme-color" content="#ededed"/>
 	<title>Freddie Blackman Photography</title>
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -21,19 +23,36 @@
 
 <header class="header">
 
-	<div class="logo">
-		<img class="logo__image" src="images/global/logo.png" alt="Logo">
-	</div>
+	<nav class="navigation navigation--main">
+		<img class="logo navigation--main__logo" src="images/global/logo.png" alt="Logo">
 
-	<nav class="navigation navigation--top">
-		<ul class="navigation__menu navigation--top__menu">
-			<li class="navigation__menu-item navigation--top__menu-item navigation__menu-item--current"><a href="">Work</a></li>
-			<li class="navigation__menu-item navigation--top__menu-item"><a href="">Contact</a></li>
-			<li class="navigation__menu-item navigation--top__menu-item"><a href="">About</a></li>
+		<ul class="navigation__menu navigation--main__menu">
+			<li class="navigation__menu-item navigation--main__menu-item navigation__menu-item--current"><a href="">Work</a>
+			</li>
+			<li class="navigation__menu-item navigation--main__menu-item"><a href="">Contact</a></li>
+			<li class="navigation__menu-item navigation--main__menu-item"><a href="">About</a></li>
 		</ul>
 	</nav>
 
-	<button class="button navigation--mobile__open-button">MENU</button>
+	<nav class="navigation navigation--mobile">
+		<button class="button navigation--mobile__open-button">MENU</button>
+
+		<img class="logo navigation--mobile__logo" src="images/global/logo-mobile.png" alt="Logo">
+
+		<div class="navigation--mobile__overlay navigation--mobile__overlay--inactive">
+			<div class="navigation--mobile__overlay__menu-container">
+				<ul class="navigation__menu navigation--mobile__overlay__menu">
+					<li class="navigation__menu-item navigation--mobile__overlay__menu-item navigation__menu-item--current"><a
+						href="">Work</a>
+					</li>
+					<li class="navigation__menu-item navigation--mobile__overlay__menu-item"><a href="">Contact</a></li>
+					<li class="navigation__menu-item navigation--mobile__overlay__menu-item"><a href="">About</a></li>
+				</ul>
+			</div>
+			<button class="button navigation--mobile__close-button ion-android-close"></button>
+
+		</div>
+	</nav>
 
 </header>
 

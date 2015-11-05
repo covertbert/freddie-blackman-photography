@@ -3,6 +3,7 @@
 
 //Vendor
 @import 'vendor/normalize';
+@import 'vendor/ionicons';
 
 //Global
 @import 'global/colors';
@@ -51,6 +52,7 @@ i {
 .button {
 	background: none;
 	border: 0;
+	cursor: pointer;
 
 	&:focus {
 		border: 0;
@@ -81,5 +83,10 @@ i {
 
 .browserupgrade {
 	position: fixed;
+	width: 100%;
+	padding: 40px 0;
 	margin: 0;
+	text-align: center;
+	background-color: $background-grey;
+	border-bottom: 1px solid $type-grey;
 }
